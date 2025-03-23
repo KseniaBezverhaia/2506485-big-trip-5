@@ -51,7 +51,7 @@ function createPointTemplate (point, destination, offers) {
             </div>
           </li>
   `);
-};
+}
 
 export default class PointView {
   constructor(point, destination, offers){
@@ -59,7 +59,7 @@ export default class PointView {
     this.destination = destination;
     this.offers = offers;
   }
-  
+
   getTemplate() {
     return createPointTemplate(this.point, this.destination, this.offers);
   }
